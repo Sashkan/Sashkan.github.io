@@ -11,7 +11,7 @@ const Project = ({ }) => {
     name
   } = useParams()
 
-  const project = projects.find(p => p.name === name)
+  const project = projects.find(p => p.name.toLowerCase() === name.toLowerCase())
 
   return (
     <motion.div

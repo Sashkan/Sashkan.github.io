@@ -10,7 +10,7 @@ const ProjectListItem = ({ project }) => {
           h='35em'
           alignItems='flex-end'
           justifyContent='center'
-          background={`url('https://source.unsplash.com/800x1000/?${project.tags.join(',')}') no-repeat center center`}
+          background={`url('/${project.image}') no-repeat center center`}
           backgroundSize='cover'
           _hover={{
             opacity: '0.8',
@@ -18,15 +18,6 @@ const ProjectListItem = ({ project }) => {
           }}
           transition='0.2s'
         >
-          <Box
-            p='3'
-            w='100%'
-            bg='#fff'
-          >
-            <Text fontSize='2xl' color='#000' fontWeight='bold'>
-              {project.name}
-            </Text>
-          </Box>
         </Flex>
       </Link>
     </GridItem>

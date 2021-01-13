@@ -8,14 +8,16 @@ const Layout = ({ children }) => {
     <Grid templateColumns='repeat(4, 1fr)'>
       <GridItem colSpan='1'>
         <Flex flexDirection='column' p='5'>
-          <Box>
-            <Text
-              fontSize='3xl'
-              fontWeight='bold'
-            >
-              POTRAN
+          <Link to='/'>
+            <Box>
+              <Text
+                fontSize='3xl'
+                fontWeight='bold'
+              >
+                POTRAN
             </Text>
-          </Box>
+            </Box>
+          </Link>
           <VStack
             margin='30px 0'
             divider={<StackDivider borderColor="gray.200" />}
@@ -26,6 +28,7 @@ const Layout = ({ children }) => {
               exact
               activeStyle={{
                 fontWeight: "bold",
+                color: 'red',
               }}
               to='/projects'>
               <Flex
@@ -44,8 +47,9 @@ const Layout = ({ children }) => {
               exact
               activeStyle={{
                 fontWeight: "bold",
+                color: 'red',
               }}
-              to='/'>
+              to='/formation'>
               <Flex
                 alignItems='center'
                 _hover={{
@@ -62,8 +66,9 @@ const Layout = ({ children }) => {
               exact
               activeStyle={{
                 fontWeight: "bold",
+                color: 'red',
               }}
-              to='/'>
+              to='/about'>
               <Flex
                 alignItems='center'
                 _hover={{
@@ -91,7 +96,7 @@ const Layout = ({ children }) => {
         </Flex>
       </GridItem>
       <GridItem colSpan='3'>
-        <Box p='5'>
+        <Box p='5' maxHeight='calc(100vh - 0px)' overflowY='auto'>
           <AnimateSharedLayout>
             {children}
           </AnimateSharedLayout>

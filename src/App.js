@@ -7,9 +7,12 @@ import {
   Link
 } from "react-router-dom";
 import Layout from "./layouts/main";
+import Home from "./pages/Home";
+import Formation from "./pages/Formation";
 import Project from "./pages/Project";
 import Projects from "./pages/Projects";
 import theme from "./theme";
+import About from "./pages/About";
 
 function LayoutRoute({ children, ...rest }) {
   return (
@@ -31,6 +34,9 @@ export default function App() {
       <Router>
         <div>
           <Switch>
+            <LayoutRoute exact path="/">
+              <Home />
+            </LayoutRoute>
             <LayoutRoute exact path="/about">
               <About />
             </LayoutRoute>
@@ -40,8 +46,8 @@ export default function App() {
             <LayoutRoute exact path="/project/:name">
               <Project />
             </LayoutRoute>
-            <LayoutRoute exact path="/">
-              <Home />
+            <LayoutRoute exact path="/formation">
+              <Formation />
             </LayoutRoute>
           </Switch>
         </div>
@@ -50,14 +56,3 @@ export default function App() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}

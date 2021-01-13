@@ -1,7 +1,7 @@
 import { Divider, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 
-const Home = ({  }) => {
+const About = ({ }) => {
   return (
     <Grid templateColumns='repeat(3, 1fr)'>
       <GridItem colSpan='2'>
@@ -15,11 +15,11 @@ const Home = ({  }) => {
       </GridItem>
       <GridItem>
         <Image
-          src="https://source.unsplash.com/900x1600/?code"
+          src="https://source.unsplash.com/900x1600/?drums"
         />
       </GridItem>
     </Grid>
   )
 }
 
-export default Home
+export default About

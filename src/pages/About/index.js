@@ -1,17 +1,20 @@
-import { Divider, Grid, GridItem, Image, Text } from '@chakra-ui/react'
+import { Divider, Grid, GridItem, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react'
 import React from 'react'
 
 const About = ({ }) => {
   return (
     <Grid templateColumns='repeat(3, 1fr)'>
       <GridItem colSpan='2'>
-        <Text fontSize='40px'>
-          Hi
+        <Text fontSize='30px' fontWeight='bold'>
+          About me
         </Text>
         <Divider />
-        <Text m='10px 0'>
-          I'm a web developer working with node.js and React
-        </Text>
+        <UnorderedList>
+          <ListItem fontSize='2xl'>I'm fluent in English/French</ListItem>
+          <ListItem fontSize='2xl'>I play drums.</ListItem>
+          <ListItem fontSize='2xl'>I play a lot of video games.</ListItem>
+          <ListItem fontSize='2xl'>I usually work at night</ListItem>
+        </UnorderedList>
       </GridItem>
       <GridItem>
         <Image

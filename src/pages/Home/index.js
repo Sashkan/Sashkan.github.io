@@ -17,7 +17,7 @@ const Home = ({ }) => {
         </Text>
           <Divider />
           <Text m='10px 0'>
-            I'm a web developer working with node.js and React
+            I'm a web developer working with node.js and React.
         </Text>
         </GridItem>
         <GridItem>

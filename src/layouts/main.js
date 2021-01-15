@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
               <Text
                 fontSize='3xl'
                 fontWeight='bold'
+                color='teal.500'
               >
                 POTRAN
             </Text>
@@ -28,7 +29,7 @@ const Layout = ({ children }) => {
               exact
               activeStyle={{
                 fontWeight: "bold",
-                color: 'red',
+                color: 'teal',
               }}
               to='/projects'>
               <Flex
@@ -47,7 +48,7 @@ const Layout = ({ children }) => {
               exact
               activeStyle={{
                 fontWeight: "bold",
-                color: 'red',
+                color: 'teal',
               }}
               to='/formation'>
               <Flex
@@ -66,7 +67,7 @@ const Layout = ({ children }) => {
               exact
               activeStyle={{
                 fontWeight: "bold",
-                color: 'red',
+                color: 'teal',
               }}
               to='/about'>
               <Flex
@@ -89,9 +90,25 @@ const Layout = ({ children }) => {
             <Text m='10px 0'>
               pierreoliviertran@gmail.com
             </Text>
-            <Text>
+            <Text m='10px 0'>
               06.79.63.36.78
             </Text>
+            <a
+              target='_blank'
+              href='https://potran.medium.com/'
+            >
+              <Text m='10px 0' fontWeight='bold' color='teal.500'>
+                medium
+              </Text>
+            </a>
+            <a
+              target='_blank'
+              href='https://www.linkedin.com/in/potran/'
+            >
+              <Text m='10px 0' fontWeight='bold' color='teal.500'>
+                linkedin
+              </Text>
+            </a>
           </Box>
         </Flex>
       </GridItem>

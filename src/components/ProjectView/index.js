@@ -1,4 +1,4 @@
-import { Divider, Grid, GridItem, Image, Text } from '@chakra-ui/react'
+import { Divider, Grid, GridItem, Image, Text , Box} from '@chakra-ui/react'
 import React from 'react'
 
 const ProjectView = ({ project }) => {
@@ -15,10 +15,15 @@ const ProjectView = ({ project }) => {
         <Text m='10px 0'>
           {project.description}
         </Text>
+        {project.stack && project.stack.length &&
+          <Box>
+            <Text as='i'>Stack: {project.stack.join(', ')}</Text>
+          </Box>
+        }
       </GridItem>
       <GridItem colSpan='1'>
         <Image
-          src={`/${project.image}`}
+          src={`https://source.unsplash.com/${project.image}/900x1600`}
         />
       </GridItem>
     </Grid>

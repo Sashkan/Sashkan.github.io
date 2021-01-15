@@ -22,7 +22,7 @@ const Home = ({ }) => {
         </GridItem>
         <GridItem>
           <Image
-            src="https://source.unsplash.com/900x1600/?code"
+            src="https://source.unsplash.com/Hf4Ap1-ef40/900x1600"
           />
         </GridItem>
       </Grid>

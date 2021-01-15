@@ -8,7 +8,7 @@ const FormationItem = ({ formation }) => {
     <Box
       marginBottom='10px'
     >
-      <Text fontSize='4xl' color='red.500'>
+      <Text fontSize='4xl' color='teal.500'>
         {formation.name}
       </Text>
       <Text fontSize='2xl' as='i'>
@@ -54,7 +54,7 @@ const Formation = ({ }) => {
         </GridItem>
         <GridItem>
           <Image
-            src="https://source.unsplash.com/900x1600/?school"
+            src="https://source.unsplash.com/GWOTvo3qq7U/900x1600"
           />
         </GridItem>
       </Grid>

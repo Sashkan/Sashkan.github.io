@@ -8,9 +8,9 @@ const ProjectListItem = ({ project }) => {
       <Link to={`/project/${project.name}`}>
         <Flex
           h='35em'
-          alignItems='flex-end'
+          alignItems='center'
           justifyContent='center'
-          background={`url('/${project.image}') no-repeat center center`}
+          background={`url('https://source.unsplash.com/${project.image}/900x1600') no-repeat center center`}
           backgroundSize='cover'
           _hover={{
             opacity: '0.8',
@@ -18,6 +18,16 @@ const ProjectListItem = ({ project }) => {
           }}
           transition='0.2s'
         >
+          <Box
+            p='3'
+            bg='#fff'
+            textTransform='uppercase'
+            fontSize='xl'
+          >
+            <Text fontWeight='bold'>
+              {project.name}
+            </Text>
+          </Box>
         </Flex>
       </Link>
     </GridItem>

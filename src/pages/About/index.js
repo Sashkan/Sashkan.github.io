@@ -18,7 +18,7 @@ const About = ({ }) => {
       </GridItem>
       <GridItem>
         <Image
-          src="https://source.unsplash.com/900x1600/?drums"
+          src="https://source.unsplash.com/eUMf3CaUUho/900x1600"
         />
       </GridItem>
     </Grid>
